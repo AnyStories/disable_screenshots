@@ -6,13 +6,20 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4d16743-8324-4b7d-b830-1146acbf70bc" name="Default Changelist" comment="" />
+    <list default="true" id="f4d16743-8324-4b7d-b830-1146acbf70bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/disable_screenshots.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/disable_screenshots.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_28" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1d7Sx3A8a9CSY0ClHfWr0T4DFm0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,9 +27,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="SvnConfiguration">
@@ -39,17 +47,13 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2439" y="118" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1591775274345">
-      <screen x="1680" y="-301" width="1920" height="1057" />
+    <state x="379" y="-890" key="SettingsEditor" timestamp="1622602341845">
+      <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="2439" y="118" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/1680.-301.1920.1057/54.23.1626.1027@1680.-301.1920.1057" timestamp="1591775274345" />
-    <state x="2025" y="-221" key="SettingsEditor" timestamp="1591775206032">
-      <screen x="1680" y="-301" width="1920" height="1057" />
+    <state x="379" y="-890" key="SettingsEditor/-248.-1057.1920.1057/0.23.1440.829@-248.-1057.1920.1057" timestamp="1622602341845" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1622603097442">
+      <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="2025" y="-221" key="SettingsEditor/1680.-301.1920.1057/54.23.1626.1027@1680.-301.1920.1057" timestamp="1591775206032" />
-    <state x="2229" y="21" key="com.intellij.ide.util.TipDialog" timestamp="1591837974736">
-      <screen x="1680" y="-301" width="1920" height="1057" />
-    </state>
-    <state x="2229" y="21" key="com.intellij.ide.util.TipDialog/1680.-301.1920.1057/54.23.1626.1027@1680.-301.1920.1057" timestamp="1591837974736" />
+    <state width="500" height="445" key="SwitcherDM/-248.-1057.1920.1057/0.23.1440.829@-248.-1057.1920.1057" timestamp="1622603097442" />
   </component>
 </project>

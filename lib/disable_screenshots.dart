@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class DisableScreenshots {
-  static DisableScreenshots _instance;
+  static DisableScreenshots? _instance;
+
   factory DisableScreenshots() {
     if (_instance == null) {
       final MethodChannel methodChannel = const MethodChannel(
@@ -14,22 +15,23 @@ class DisableScreenshots {
           const EventChannel('com.devlxx.DisableScreenshots/observer');
       _instance = DisableScreenshots.private(methodChannel, eventChannel);
     }
-    return _instance;
+    return _instance!;
   }
 
   DisableScreenshots.private(this._methodChannel, this._eventChannel);
+
   final MethodChannel _methodChannel;
   final EventChannel _eventChannel;
-  Stream<void> _onScreenShots;
+  Stream<void>? _onScreenShots;
 
-  OverlayEntry _overlayEntry;
+  OverlayEntry? _overlayEntry;
 
   void addWatermark(BuildContext context, String watermark,
-      {int rowCount = 3, int columnCount = 10, TextStyle textStyle}) async {
+      {int rowCount = 3, int columnCount = 10, TextStyle? textStyle}) async {
     if (_overlayEntry != null) {
-      _overlayEntry.remove();
+      _overlayEntry!.remove();
     }
-    OverlayState overlayState = Overlay.of(context);
+    OverlayState? overlayState = Overlay.of(context);
     _overlayEntry = OverlayEntry(
         builder: (context) => DisableScreenshotsWatarmark(
               rowCount: rowCount,
@@ -41,22 +43,26 @@ class DisableScreenshots {
                       fontSize: 18,
                       decoration: TextDecoration.none),
             ));
-    overlayState.insert(_overlayEntry);
+    if (overlayState != null) {
+      overlayState.insert(_overlayEntry!);
+    }
     // return await _methodChannel.invokeMethod<void>("addWatermark", ['我是水印']);
   }
 
   void addCustomWatermark(BuildContext context, Widget widget) {
     if (_overlayEntry != null) {
-      _overlayEntry.remove();
+      _overlayEntry!.remove();
     }
-    OverlayState overlayState = Overlay.of(context);
+    OverlayState? overlayState = Overlay.of(context);
     _overlayEntry = OverlayEntry(builder: (context) => widget);
-    overlayState.insert(_overlayEntry);
+    if (overlayState != null) {
+      overlayState.insert(_overlayEntry!);
+    }
   }
 
   void removeWatermark() async {
     if (_overlayEntry != null) {
-      _overlayEntry.remove();
+      _overlayEntry!.remove();
       _overlayEntry = null;
     }
   }
@@ -65,7 +71,7 @@ class DisableScreenshots {
     if (_onScreenShots == null) {
       _onScreenShots = _eventChannel.receiveBroadcastStream();
     }
-    return _onScreenShots;
+    return _onScreenShots!;
   }
 
   /// 只支持安卓
@@ -86,11 +92,11 @@ class DisableScreenshotsWatarmark extends StatelessWidget {
   final TextStyle textStyle;
 
   const DisableScreenshotsWatarmark({
-    Key key,
-    @required this.rowCount,
-    @required this.columnCount,
-    @required this.text,
-    @required this.textStyle,
+    Key? key,
+    required this.rowCount,
+    required this.columnCount,
+    required this.text,
+    required this.textStyle,
   }) : super(key: key);
 
   @override
